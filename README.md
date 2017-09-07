@@ -11,7 +11,9 @@ Pour cette formation vous aurez besoin de :
 * Yarn (Gestionnaire de dépendances)
 
 Outils utilisés : 
-* Angular-cli (outil Angular)
+* Angular-cli 
+* Npm-cli
+* Yarn-cli
 
 Frameworks utilisés : 
 * Angular 4
