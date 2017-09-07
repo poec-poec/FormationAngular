@@ -46,6 +46,10 @@ Librairies pour Bootstrap :
 
 * Ouvrir Vs Code, aller dans la section "Extensions" et installer "Angular Essentials" de johnpapa
 
+## Installer Yarn via Npm
+
+* Ouvrir le Terminal (Cmder) et lancer la commande : npm install --global yarn : [https://yarnpkg.com/en/docs/install#alternatives-tab](https://yarnpkg.com/en/docs/install#alternatives-tab)
+
 ## C'est parti !
 
 Direction le Wiki pour suivre cette formation :  [Wiki formation](https://github.com/ChristopheGueroult/FormationAngular/wiki)
