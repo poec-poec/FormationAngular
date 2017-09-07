@@ -44,7 +44,9 @@ Librairies pour Bootstrap :
 
 * Ouvrir Vs Code, aller dans la section "Extensions" et installer "Angular Essentials" de johnpapa
 
+## C'est parti !
 
+Direction le Wiki pour suivre cette formation :  [Wiki formation](https://github.com/ChristopheGueroult/FormationAngular/wiki)
 
 Au terme de cette formation, vos retours, appréciations, pull request seront les bienvenues et m'aideront à améliorer cette formation dédiée au frameword Angular.
 
