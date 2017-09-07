@@ -1,13 +1,26 @@
-# FormationAngular
+# Formation Angular 4
 
-> Bienvenue sur cette  formation Angular (niveau débutant et intermédiaire). Sur ce dépôt vous trouverez tous les fichiers sources de la formation.
+> Bienvenue sur cette  formation Angular 4 (niveau débutant et intermédiaire). Sur ce dépôt vous trouverez tous les fichiers sources de la formation.
 
 Pour cette formation vous aurez besoin de : 
 * NodeJs
 * Cmder (Emulateur Terminal Linux)
 * GitKraken (Interface graphique pour git, supporte git-flow)
 * Vs Code IDE (Disponible pour Windows, Mac, Linux)
-* Quelques plugins pour Vs Code
+* Quelques extensions pour Vs Code
+* Yarn (Gestionnaire de dépendances)
+
+Outils utilisés : 
+* Angular-cli (outil Angular)
+
+Frameworks utilisés : 
+* Angular 4
+* Bootstrap 4
+
+Librairies pour Bootstrap : 
+* jQuery 
+* PopperJs 
+
 
 ## Installation de NodeJs
 
@@ -27,9 +40,11 @@ Pour cette formation vous aurez besoin de :
 
 * Télécharger et installer Vs Code à l'adresse suivante : [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-## Installation des plugins pour Vs Code
+## Installation les extensions pour Vs Code
 
 * Ouvrir Vs Code, aller dans la section "Extensions" et installer "Angular Essentials" de johnpapa
+
+
 
 Au terme de cette formation, vos retours, appréciations, pull request seront les bienvenues et m'aideront à améliorer cette formation dédiée au frameword Angular.
 
