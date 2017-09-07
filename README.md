@@ -32,3 +32,7 @@ Pour cette formation vous aurez besoin de :
 * Ouvrir Vs Code, aller dans la section "Extensions" et installer "Angular Essentials" de johnpapa
 
 Au terme de cette formation, vos retours, appréciations, pull request seront les bienvenues et m'aideront à améliorer cette formation dédiée au frameword Angular.
+
+En vous souhaitant une bonne formation,
+
+Christophe ;-)
