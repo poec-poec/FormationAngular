@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-
+  title: string;
   constructor() { }
 
   ngOnInit() {
+    this.title = "Livraisons";
   }
 
 }
