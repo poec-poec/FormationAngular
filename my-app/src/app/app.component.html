@@ -1,3 +1,14 @@
 <app-menu></app-menu>
+<!-- {{ collection | json }} -->
+<div class="container cards" *ngFor="let item of collection">
 
-<p class="container">ajout content</p>
+  <div class="card">
+    <h4 class="card-header">Featured</h4>
+    <div class="card-body">
+      <h4 class="card-title">{{ item.name }}</h4>
+      <p class="card-text">référence : {{ item.reference }}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+</div>
