@@ -10,7 +10,6 @@ import { Item } from './item';
 })
 export class AppComponent implements OnInit {
   collection: Item[];
-  newItem: Item;
 
   form: FormGroup;
   nameCtrl: FormControl;
