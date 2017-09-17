@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
-import { Item } from './item';
 import { ModalComponent } from './modal/modal.component';
+import { Item } from './item';
 
 @Component({
   selector: 'app-root',
@@ -12,22 +11,7 @@ import { ModalComponent } from './modal/modal.component';
 })
 export class AppComponent implements OnInit {
   collection: Item[];
-
-  form: FormGroup;
-  nameCtrl: FormControl;
-  referenceCtrl: FormControl;
-  stateCtrl: FormControl;
-
-  constructor(fb: FormBuilder, private modalService: NgbModal) {
-    // this.nameCtrl = fb.control('Chris'); // donne une valeur par defaut
-    this.nameCtrl = fb.control('', [Validators.required, Validators.minLength(2)]);
-    this.referenceCtrl = fb.control('', [Validators.required, Validators.minLength(4)]);
-    this.stateCtrl = fb.control(0);
-    this.form = fb.group({
-      name: this.nameCtrl,
-      reference: this.referenceCtrl,
-      state: this.stateCtrl
-    });
+  constructor(private modalService: NgbModal) {
   }
   ngOnInit() {
     this.collection = [
@@ -37,22 +21,9 @@ export class AppComponent implements OnInit {
     ];
   }
 
-  test() {
-    // console.log(this.nameCtrl.valueChanges);
-    console.log(this.form.get('name').value)
-  }
-
-  addItem() {
-    this.collection.push(this.form.value);
-    this.reset();
+  addItemToCollection(item: Item) {
+    this.collection.push(item);
     this.open();
-    // console.log(this.form.value);
-  }
-
-  reset() {
-    this.nameCtrl.setValue('');
-    this.referenceCtrl.setValue('');
-    this.stateCtrl.setValue(0);
   }
 
   open() {

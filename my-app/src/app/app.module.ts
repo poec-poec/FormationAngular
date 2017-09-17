@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { ModalComponent } from './modal/modal.component';
 import { ListitemComponent } from './listitem/listitem.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     ModalComponent,
-    ListitemComponent
+    ListitemComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
