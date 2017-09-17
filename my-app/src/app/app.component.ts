@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
   stateCtrl: FormControl;
 
   constructor(fb: FormBuilder) {
+    // this.nameCtrl = fb.control('Chris'); // donne une valeur par defaut
     this.nameCtrl = fb.control('', [Validators.required, Validators.minLength(2)]);
     this.referenceCtrl = fb.control('', [Validators.required, Validators.minLength(4)]);
     this.stateCtrl = fb.control(0);
@@ -33,6 +34,11 @@ export class AppComponent implements OnInit {
       new Item({reference: '1548', name: 'Justine', state: 1}),
       new Item({reference: '5689', name: 'Christophe', state: 2})
     ];
+  }
+
+  test() {
+    // console.log(this.nameCtrl.valueChanges);
+    console.log(this.form.get('name').value)
   }
 
   addItem() {
