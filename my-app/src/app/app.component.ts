@@ -11,7 +11,6 @@ import { ModalComponent } from './modal/modal.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  closeResult: string;
   collection: Item[];
 
   form: FormGroup;
