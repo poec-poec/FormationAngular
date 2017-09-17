@@ -8,12 +8,14 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { ModalComponent } from './modal/modal.component';
+import { ListitemComponent } from './listitem/listitem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    ModalComponent
+    ModalComponent,
+    ListitemComponent
   ],
   imports: [
     BrowserModule,
