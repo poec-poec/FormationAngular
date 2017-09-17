@@ -1,4 +1,11 @@
-<div class="container cards" *ngFor="let item of collection">
+<div class="container">
+  <div class="navbar navbar-light bg-light">
+    <form class="form-inline">
+      <input #listPipe (keyup)="$event" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    </form>
+  </div>
+</div>
+<div class="container cards" *ngFor="let item of collection | filter:listPipe.value">
   <div class="card">
     <h4 class="card-header state-0" *ngIf="0 === item.state">A livrer</h4>
     <h4 class="card-header state-1" *ngIf="1 === item.state">En cours de livraison</h4>
