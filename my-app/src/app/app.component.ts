@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
     console.log(this.form.get('name').value)
   }
 
-  addItem(content) {
+  addItem() {
     this.collection.push(this.form.value);
     this.reset();
     this.open();
