@@ -1,6 +1,7 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { Item } from '../item';
+import { CollectionService } from '../collection.service';
 
 @Component({
   selector: 'app-form',
@@ -8,12 +9,12 @@ import { Item } from '../item';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
-  @Output() add: EventEmitter<Item> = new EventEmitter;
   form: FormGroup;
   nameCtrl: FormControl;
   referenceCtrl: FormControl;
   stateCtrl: FormControl;
-  constructor(fb: FormBuilder) {
+
+  constructor(fb: FormBuilder, private _CollectionService: CollectionService) {
     this.nameCtrl = fb.control('', [Validators.required, Validators.minLength(2)]);
     this.referenceCtrl = fb.control('', [Validators.required, Validators.minLength(4)]);
     this.stateCtrl = fb.control(0);
@@ -28,7 +29,7 @@ export class FormComponent implements OnInit {
   }
 
   addItem() {
-    this.add.emit(this.form.value);
+    this._CollectionService.addItemToCollection(this.form.value);
     this.reset();
   }
 
