@@ -7,7 +7,7 @@ export class StateDirective implements OnChanges {
   @Input() appState: number;
   constructor(public _element: ElementRef, public _renderer: Renderer2) { }
   ngOnChanges() {
-    console.log(this.appState);
+    // console.log(this.appState);
     const cssClass = `state-${this.appState}`;
     let text: string;
     const elementNode = this._element.nativeElement;
