@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Item } from '../item';
 import { CollectionService } from '../collection.service';
 
