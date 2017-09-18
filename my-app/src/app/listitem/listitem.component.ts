@@ -14,4 +14,8 @@ export class ListitemComponent implements OnInit {
   ngOnInit() {
     this.collection = this._AppComponent.collection;
   }
+
+  changeState(item: Item, state: number) {
+    item.state = state;
+  }
 }
