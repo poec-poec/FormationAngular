@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container form">
   <div class="navbar navbar-light bg-light">
     <form class="form-inline">
       <input #listPipe (keyup)="$event" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -12,8 +12,8 @@
       <h4 class="card-title">{{ item.name }}</h4>
       <p class="card-text">référence : {{ item.reference }}</p>
       <div *ngIf="2 !== item.state">
-        <button *ngIf="1 !== item.state" (click)="changeState(item,1)" class="btn btn-primary">En cours</button>
-        <button (click)="changeState(item,2)" class="btn btn-primary">Livrée</button>
+        <button *ngIf="1 !== item.state" (click)="changeState(item, 1)" class="btn btn-primary">En cours</button>
+        <button (click)="changeState(item, 2)" class="btn btn-primary">Livrée</button>
       </div>
     </div>
   </div>
