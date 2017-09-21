@@ -5,6 +5,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { RoutingModule } from './routing/routing.module';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -14,6 +17,7 @@ import { FormComponent } from './form/form.component';
 import { FilterPipe } from './filter.pipe';
 import { StateDirective } from './state.directive';
 import { CollectionService } from './collection.service';
+import { environment } from './../environments/environment.prod';
 
 
 @NgModule({
@@ -31,7 +35,11 @@ import { CollectionService } from './collection.service';
     FormsModule,
     ReactiveFormsModule,
     NgbModule.forRoot(),
-    RoutingModule
+    RoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule, // imports firebase/database, only needed for database features
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features
+
   ],
   providers: [CollectionService],
   entryComponents: [ModalComponent],
