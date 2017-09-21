@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { RoutingModule } from './routing/routing.module';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -13,6 +14,7 @@ import { FormComponent } from './form/form.component';
 import { FilterPipe } from './filter.pipe';
 import { StateDirective } from './state.directive';
 import { CollectionService } from './collection.service';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { CollectionService } from './collection.service';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    RoutingModule
   ],
   providers: [CollectionService],
   entryComponents: [ModalComponent],
