@@ -5,7 +5,7 @@
     </form>
   </div>
 </div>
-<div class="container cards" *ngFor="let item of collection | filter:listPipe.value">
+<div class="container cards" *ngFor="let item of ( collection | async ) | filter:listPipe.value">
   <div class="card">
     <span class="card-header" [appState]="item.state">Commande livrée</span>
     <div class="card-body">

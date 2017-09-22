@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-modal',
@@ -8,9 +9,17 @@ import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalComponent implements OnInit {
   @Input() msg;
-  constructor(public activeModal: NgbActiveModal) { }
+  constructor(public activeModal: NgbActiveModal, private _Router: Router) { }
 
   ngOnInit() {
   }
 
+  close() {
+    this.activeModal.close('Close click');
+    this._Router.navigate(['list']);
+  }
+
+  dismiss() {
+    this.activeModal.dismiss('Cross click');
+  }
 }
