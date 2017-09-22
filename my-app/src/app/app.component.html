@@ -1,12 +1,4 @@
 <app-menu></app-menu>
-<ul>
-  <li class="text" *ngFor="let item of items | async">
-    {{item.name}}
-  </li>
-</ul>
-<input type="text" class="form-control" name="" [(ngModel)]="item.name" placeholder="saisissez un name">
-<button class="btn btn-block btn-warning" (click)="AddItem(item)">Ajouter item</button>
-
 <router-outlet></router-outlet>
 
 
