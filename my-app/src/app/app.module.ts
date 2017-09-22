@@ -18,6 +18,7 @@ import { FilterPipe } from './filter.pipe';
 import { StateDirective } from './state.directive';
 import { CollectionService } from './collection.service';
 import { environment } from './../environments/environment.prod';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { environment } from './../environments/environment.prod';
     ListitemComponent,
     FormComponent,
     FilterPipe,
-    StateDirective
+    StateDirective,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
