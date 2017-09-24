@@ -41,5 +41,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Infos environment prod a ignorer
+# Infos environment prod 
 /my-app/src/environments/environment.prod.ts
