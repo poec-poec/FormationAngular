@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # Infos environment prod a ignorer
-/src/environments/environment.prod.ts
+/my-app/src/environments/environment.prod.ts
